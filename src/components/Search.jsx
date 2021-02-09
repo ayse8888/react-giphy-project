@@ -19,7 +19,7 @@ const Search = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault()
-    const URL = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&limit=40&q=${search}`
+    const URL = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${search}`
 
 
     const sendRequest = async () => {
