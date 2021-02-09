@@ -1,0 +1,43 @@
+/* mutual styles of input and button in the mixin */
+@mixin mutualStyle {
+  height: 35px;
+}
+
+@import './_variables';
+
+/* seperate styles of input and button and p*/
+$inputWidth: 250px;
+$inputMargin: 0.5rem;
+$inputPadding: 0.5rem;
+$buttonWidth: 50px;
+$linkColor: black;
+$linkStyle: italic;
+$linkWeight: bold;
+
+.search-input {
+  @include mutualStyle();
+  width : $inputWidth;
+  margin-right: $inputMargin;
+  margin-bottom : $inputMargin;
+  padding-left: $inputPadding;
+}
+
+.search-button {
+  @include mutualStyle();
+  border-radius: $buttonRadius;
+  outline: $buttonOutline;
+  border: $buttonBrdr;
+  width : $buttonWidth;
+  background-color: $buttonBackground;
+  color: $buttonColor;
+  &:hover {
+    background-color: $buttonHoverBgc;
+    color: $buttonHoverColor;
+  }
+}
+
+.link {
+  color: $linkColor;
+  font-style: $linkStyle;
+  font-weight: $linkWeight;
+}

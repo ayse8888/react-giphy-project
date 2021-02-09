@@ -1,0 +1,36 @@
+$navbarFlex : flex;
+$navbarWrap: wrap;
+$navbarStyle: none;
+$navbarBackground: #222121;
+$navbarColor: #fff;
+
+.navbar{
+  background-color: $navbarBackground;
+
+  .navbar-items ul {
+  display: $navbarFlex;
+  list-style: $navbarStyle;
+  flex-wrap: $navbarWrap;
+
+
+  li {
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(to right, #7F00FF, #E100FF);
+    border-image-slice: 1;
+    padding: 0.2rem 1rem;
+    margin-right: 1rem;
+    &:hover {
+    background: linear-gradient(to right, #ec7d7d ,purple);
+    }  
+
+    a {
+      text-decoration: none;
+      color: $navbarColor;
+    }
+  }
+ }
+}
+
+
+
+

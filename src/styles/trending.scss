@@ -1,0 +1,23 @@
+$buttonWidth: 300px;
+$buttonHeight: 35px;
+
+
+@import './_variables';
+
+.load-more {
+  outline: $buttonOutline;
+  border: $buttonBorder;
+  width: $buttonWidth;
+  height: $buttonHeight;
+  background-color: $buttonBackground;
+  color: $buttonColor;
+  border-radius: $buttonRadius;
+  cursor: $buttonCursor;
+  
+  &:hover{
+    background-color: $buttonHoverBgc;
+    color: $buttonHoverColor;
+    border: $buttonBrdr;
+  }
+}
+
